@@ -85,6 +85,12 @@ endif
 PRODUCT_PACKAGES += \
     init.lake.rc
 
+# Moto Camera 2
+TARGET_MOTCAMERA2 := denali
+TARGET_USES_MOTCAMERA2 := true
+
+$(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
